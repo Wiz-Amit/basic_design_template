@@ -12,6 +12,7 @@ npm install
 ```
 
 ### Using:
-- Bootstrap (v4)
-- FontAwesome (v5)
-- SassMQ (v5)
+- Normalize.css
+- Bootstrap
+- FontAwesome
+- SassMQ
