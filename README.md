@@ -1,6 +1,7 @@
-# Boilerplate code for template design
-## Steps to install
+# Quick install
+Boilerplate code for template design
 
+## npm
 ```bash
 git clone https://github.com/Wiz-Amit/basic_design_template.git
 cd basic_design_template
