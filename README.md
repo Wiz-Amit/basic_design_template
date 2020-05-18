@@ -1,14 +1,17 @@
-# Quick install
+# Basic Design Template
 Boilerplate code for template design
 
-## npm
+## Quick install
+Try this Basic Design Template:
+
+### NPM
 ```bash
 git clone https://github.com/Wiz-Amit/basic_design_template.git
 cd basic_design_template
 npm install
 ```
 
-## Using:
+### Using:
 - Bootstrap (v4)
 - FontAwesome (v5)
 - SassMQ (v5)
