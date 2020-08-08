@@ -1,8 +1,6 @@
 //@ts-check
 "use strict";
 
-window.addEventListener("load", init);
-
 function init() {
   // initialize all functions
   hello();
@@ -12,3 +10,6 @@ function init() {
 function hello() {
   console.log("Script has been loaded successfully!");
 }
+
+// :: EVENT LISTENERS ::
+window.addEventListener("load", init);

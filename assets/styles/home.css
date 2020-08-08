@@ -1,4 +1,66 @@
-@import url("../../node_modules/normalize.css/normalize.css");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+:root {
+  --primary: hsl(254, 57%, 59%) !important;
+  --primary-h: 254;
+  --primary-s: 57%;
+  --primary-l: 59%;
+  --secondary: hsl(157, 74%, 54%) !important;
+  --secondary-h: 157;
+  --secondary-s: 74%;
+  --secondary-l: 54%;
+  --success: hsl(158, 75%, 45%) !important;
+  --success-h: 158;
+  --success-s: 75%;
+  --success-l: 45%;
+  --warning: hsl(43, 91%, 60%) !important;
+  --warning-h: 43;
+  --warning-s: 91%;
+  --warning-l: 60%;
+  --danger: hsl(5, 78%, 57%) !important;
+  --danger-h: 5;
+  --danger-s: 78%;
+  --danger-l: 57%;
+  --info: hsl(188, 60%, 51%) !important;
+  --info-h: 188;
+  --info-s: 60%;
+  --info-l: 51%;
+  --grey: hsl(215, 15%, 68%) !important;
+  --grey-h: 215;
+  --grey-s: 15%;
+  --grey-l: 68%;
+  --dark: hsl(216, 11%, 46%) !important;
+  --dark-h: 216;
+  --dark-s: 11%;
+  --dark-l: 46%;
+  --color-smoke: hsl(0, 0%, 96%) !important;
+  --color-smoke-h: 0;
+  --color-smoke-s: 0%;
+  --color-smoke-l: 96%;
+  --color-base-primary: hsl(0, 0%, 0%) !important;
+  --color-base-primary-h: 0;
+  --color-base-primary-s: 0%;
+  --color-base-primary-l: 0%;
+  --color-base-secondary: hsl(0, 0%, 96%) !important;
+  --color-base-secondary-h: 0;
+  --color-base-secondary-s: 0%;
+  --color-base-secondary-l: 96%;
+  --color-surface-primary: hsl(216, 11%, 46%) !important;
+  --color-surface-primary-h: 216;
+  --color-surface-primary-s: 11%;
+  --color-surface-primary-l: 46%;
+  --color-shadow-primary: hsl(233, 100%, 62%) !important;
+  --color-shadow-primary-h: 233;
+  --color-shadow-primary-s: 100%;
+  --color-shadow-primary-l: 62%;
+  --color-shadow-primary: hsl(233, 100%, 62%) !important;
+  --color-shadow-primary-h: 233;
+  --color-shadow-primary-s: 100%;
+  --color-shadow-primary-l: 62%;
+  --shadow-primary: 0 3px 3.2vmin -5px hsla(var(--color-shadow-primary-h), var(--color-shadow-primary-s), var(--color-shadow-primary-l), 0.15);
+  --shadow-deep: 0 2px 3vmin -5px hsla(var(--color-shadow-primary-h), var(--color-shadow-primary-s), var(--color-shadow-primary-l), 0.3);
+  --font-primary: 'Poppins', sans-serif;
+}
+
 /*!
  * Bootstrap v4.4.1 (https://getbootstrap.com/)
  * Copyright 2011-2019 The Bootstrap Authors
@@ -10765,6 +10827,274 @@ a.text-dark:hover, a.text-dark:focus {
   }
 }
 
+.bg-primary {
+  background-color: var(--primary) !important;
+}
+
+.text-primary {
+  color: var(--primary) !important;
+}
+
+.btn-primary {
+  background-color: var(--primary);
+  border-color: var(--primary);
+}
+
+.btn-primary:not(:disabled):not(.disabled):hover, .btn-primary:not(:disabled):not(.disabled):focus, .btn-primary:not(:disabled):not(.disabled):active {
+  background-color: hsl(var(--primary-h), var(--primary-s), calc(var(--primary-l) * 0.9));
+  border-color: hsl(var(--primary-h), var(--primary-s), calc(var(--primary-l) * 0.9));
+}
+
+.btn-outline-primary {
+  border-color: var(--primary);
+  color: var(--primary);
+}
+
+.btn-outline-primary:not(:disabled):not(.disabled):hover, .btn-outline-primary:not(:disabled):not(.disabled):focus, .btn-outline-primary:not(:disabled):not(.disabled):active {
+  background-color: var(--primary);
+}
+
+.badge-primary {
+  color: var(--primary);
+  background-color: hsla(var(--primary-h), var(--primary-s), var(--primary-l), 0.15);
+}
+
+.bg-secondary {
+  background-color: var(--secondary) !important;
+}
+
+.text-secondary {
+  color: var(--secondary) !important;
+}
+
+.btn-secondary {
+  background-color: var(--secondary);
+  border-color: var(--secondary);
+}
+
+.btn-secondary:not(:disabled):not(.disabled):hover, .btn-secondary:not(:disabled):not(.disabled):focus, .btn-secondary:not(:disabled):not(.disabled):active {
+  background-color: hsl(var(--secondary-h), var(--secondary-s), calc(var(--secondary-l) * 0.9));
+  border-color: hsl(var(--secondary-h), var(--secondary-s), calc(var(--secondary-l) * 0.9));
+}
+
+.btn-outline-secondary {
+  border-color: var(--secondary);
+  color: var(--secondary);
+}
+
+.btn-outline-secondary:not(:disabled):not(.disabled):hover, .btn-outline-secondary:not(:disabled):not(.disabled):focus, .btn-outline-secondary:not(:disabled):not(.disabled):active {
+  background-color: var(--secondary);
+}
+
+.badge-secondary {
+  color: var(--secondary);
+  background-color: hsla(var(--secondary-h), var(--secondary-s), var(--secondary-l), 0.15);
+}
+
+.bg-success {
+  background-color: var(--success) !important;
+}
+
+.text-success {
+  color: var(--success) !important;
+}
+
+.btn-success {
+  background-color: var(--success);
+  border-color: var(--success);
+}
+
+.btn-success:not(:disabled):not(.disabled):hover, .btn-success:not(:disabled):not(.disabled):focus, .btn-success:not(:disabled):not(.disabled):active {
+  background-color: hsl(var(--success-h), var(--success-s), calc(var(--success-l) * 0.9));
+  border-color: hsl(var(--success-h), var(--success-s), calc(var(--success-l) * 0.9));
+}
+
+.btn-outline-success {
+  border-color: var(--success);
+  color: var(--success);
+}
+
+.btn-outline-success:not(:disabled):not(.disabled):hover, .btn-outline-success:not(:disabled):not(.disabled):focus, .btn-outline-success:not(:disabled):not(.disabled):active {
+  background-color: var(--success);
+}
+
+.badge-success {
+  color: var(--success);
+  background-color: hsla(var(--success-h), var(--success-s), var(--success-l), 0.15);
+}
+
+.bg-warning {
+  background-color: var(--warning) !important;
+}
+
+.text-warning {
+  color: var(--warning) !important;
+}
+
+.btn-warning {
+  background-color: var(--warning);
+  border-color: var(--warning);
+}
+
+.btn-warning:not(:disabled):not(.disabled):hover, .btn-warning:not(:disabled):not(.disabled):focus, .btn-warning:not(:disabled):not(.disabled):active {
+  background-color: hsl(var(--warning-h), var(--warning-s), calc(var(--warning-l) * 0.9));
+  border-color: hsl(var(--warning-h), var(--warning-s), calc(var(--warning-l) * 0.9));
+}
+
+.btn-outline-warning {
+  border-color: var(--warning);
+  color: var(--warning);
+}
+
+.btn-outline-warning:not(:disabled):not(.disabled):hover, .btn-outline-warning:not(:disabled):not(.disabled):focus, .btn-outline-warning:not(:disabled):not(.disabled):active {
+  background-color: var(--warning);
+}
+
+.badge-warning {
+  color: var(--warning);
+  background-color: hsla(var(--warning-h), var(--warning-s), var(--warning-l), 0.15);
+}
+
+.bg-danger {
+  background-color: var(--danger) !important;
+}
+
+.text-danger {
+  color: var(--danger) !important;
+}
+
+.btn-danger {
+  background-color: var(--danger);
+  border-color: var(--danger);
+}
+
+.btn-danger:not(:disabled):not(.disabled):hover, .btn-danger:not(:disabled):not(.disabled):focus, .btn-danger:not(:disabled):not(.disabled):active {
+  background-color: hsl(var(--danger-h), var(--danger-s), calc(var(--danger-l) * 0.9));
+  border-color: hsl(var(--danger-h), var(--danger-s), calc(var(--danger-l) * 0.9));
+}
+
+.btn-outline-danger {
+  border-color: var(--danger);
+  color: var(--danger);
+}
+
+.btn-outline-danger:not(:disabled):not(.disabled):hover, .btn-outline-danger:not(:disabled):not(.disabled):focus, .btn-outline-danger:not(:disabled):not(.disabled):active {
+  background-color: var(--danger);
+}
+
+.badge-danger {
+  color: var(--danger);
+  background-color: hsla(var(--danger-h), var(--danger-s), var(--danger-l), 0.15);
+}
+
+.bg-info {
+  background-color: var(--info) !important;
+}
+
+.text-info {
+  color: var(--info) !important;
+}
+
+.btn-info {
+  background-color: var(--info);
+  border-color: var(--info);
+}
+
+.btn-info:not(:disabled):not(.disabled):hover, .btn-info:not(:disabled):not(.disabled):focus, .btn-info:not(:disabled):not(.disabled):active {
+  background-color: hsl(var(--info-h), var(--info-s), calc(var(--info-l) * 0.9));
+  border-color: hsl(var(--info-h), var(--info-s), calc(var(--info-l) * 0.9));
+}
+
+.btn-outline-info {
+  border-color: var(--info);
+  color: var(--info);
+}
+
+.btn-outline-info:not(:disabled):not(.disabled):hover, .btn-outline-info:not(:disabled):not(.disabled):focus, .btn-outline-info:not(:disabled):not(.disabled):active {
+  background-color: var(--info);
+}
+
+.badge-info {
+  color: var(--info);
+  background-color: hsla(var(--info-h), var(--info-s), var(--info-l), 0.15);
+}
+
+.bg-dark {
+  background-color: var(--dark) !important;
+}
+
+.text-dark {
+  color: var(--dark) !important;
+}
+
+.btn-dark {
+  background-color: var(--dark);
+  border-color: var(--dark);
+}
+
+.btn-dark:not(:disabled):not(.disabled):hover, .btn-dark:not(:disabled):not(.disabled):focus, .btn-dark:not(:disabled):not(.disabled):active {
+  background-color: hsl(var(--dark-h), var(--dark-s), calc(var(--dark-l) * 0.9));
+  border-color: hsl(var(--dark-h), var(--dark-s), calc(var(--dark-l) * 0.9));
+}
+
+.btn-outline-dark {
+  border-color: var(--dark);
+  color: var(--dark);
+}
+
+.btn-outline-dark:not(:disabled):not(.disabled):hover, .btn-outline-dark:not(:disabled):not(.disabled):focus, .btn-outline-dark:not(:disabled):not(.disabled):active {
+  background-color: var(--dark);
+}
+
+.badge-dark {
+  color: var(--dark);
+  background-color: hsla(var(--dark-h), var(--dark-s), var(--dark-l), 0.15);
+}
+
+.btn-rounded {
+  border-radius: 24px !important;
+  padding: 0.5rem 1rem !important;
+}
+
+.badge {
+  font-size: 0.625rem;
+  line-height: 1.6;
+  font-weight: 400;
+  letter-spacing: 0;
+  font-family: Open Sans, sans-serif;
+  padding: 2px 10px;
+  text-align: center;
+  display: inline-block;
+  letter-spacing: 0.5px;
+  color: #444;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: rgba(68, 68, 68, 0.1);
+}
+
+.badge:not(.badge-pill) {
+  border-radius: 2px;
+}
+
+.text-muted {
+  color: var(--grey);
+}
+
+a {
+  color: var(--primary);
+}
+
+a:hover {
+  color: hsl(var(--primary-h), var(--primary-s), calc(var(--primary-l) * 0.8));
+}
+
+.user-select-none {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
 /*!
  * Font Awesome Free 5.13.0 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
@@ -16825,5 +17155,9 @@ readers do not read off random characters that represent icons */
 .fas {
   font-family: 'Font Awesome 5 Free';
   font-weight: 900;
+}
+
+body {
+  font-family: var(--primary);
 }
 /*# sourceMappingURL=home.css.map */
